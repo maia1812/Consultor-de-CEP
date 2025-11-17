@@ -1,0 +1,22 @@
+var campoCep = document.getElementById('CEP')
+
+campoCep.addEventListener('blur', function(event) {
+    let valor = campoCep.value
+    fetch('https://viacep.com.br/ws/' + valor + '/json/')
+    .then(response => response.json())
+    .then(data => {
+        campoCep.style.border = ''
+        console.log(data)
+        document.getElementById('bairro').value = data.bairro
+        document.getElementById('logradouro').value = data.logradouro
+        document.getElementById('estado').value = data.estado
+        document.getElementById('Cidade').value = data.localidade
+
+
+    })
+    .catch(error => { 
+        campoCep.style.border = '1px solid red'
+            
+        })
+    })
+
