@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Endereço</title>
+    <link rel="stylesheet" href="cep.css">
+</head>
+<body>
+    <main>
+        <h1>Cadastro de Endereço</h1>
+
+        <div>
+            <label for="CEP">Digite o CEP:</label>
+            <input type="text" id="CEP" placeholder="Ex: 12345-678" > <br>
+        
+            <label for="logradouro">Logradouro:</label>
+            <input type="text" id="logradouro"> <br>
+        
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro"> <br>
+        
+            <label for="Cidade">Cidade:</label>
+            <input type="text" id="Cidade"> <br>
+        
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado"> <br>
+        
+            <script src="cep.js"></script> 
+        </div>
+    
+    </main>
+</body>
+</html>
